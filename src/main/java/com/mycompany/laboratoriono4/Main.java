@@ -9,7 +9,7 @@ package com.mycompany.laboratoriono4;
  *
  * @author Usuario
  */
-public class LaboratorioNo4 {
+public class Main {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
