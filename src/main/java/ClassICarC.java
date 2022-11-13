@@ -24,7 +24,7 @@ public class ClassICarC implements ICarC{
     
     
     public boolean modo = false;
-    
+    private float indice = 0;
   
     /**
      * 
@@ -109,10 +109,17 @@ public class ClassICarC implements ICarC{
     /**
      * 
      * @param _station 
+     * @throws java.lang.Exception 
      */
     @Override
-    public void SaveStation(float _station) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void SaveStation(float _station) throws Exception{
+        if(_station < 50){
+            this.indice = _station;
+        }
+        else {
+            throw new Exception("¡Solo se puede guardar 50 emisoras");
+        }
+        
     }
 
     /**

@@ -69,7 +69,7 @@ public interface ICarC {
 	 * Metodo que debe guardar la estacion recibida en en el ArrayList
 	 * @param _station
 	 */
-	public void SaveStation(float _station);
+	public void SaveStation(float _station)throws Exception;
 	
 	/**
 	 * Metodo para poner una estacion especifica, guardada en la lista, por medio
