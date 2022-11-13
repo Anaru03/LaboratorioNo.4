@@ -12,29 +12,27 @@ import Interfaces.ISong;
  */
 public class ClassSongs implements ISong{
     
-    private String tittle;
+    private String title;
     private String artist;
     private String album;
-    private String duracion;
+    private String duration;
     private String genre;
     private String ID;
 
+    
     /**
      * 
      * @param _title 
      */
     @Override
-    public void setTitle(String _title) {
+    public void setTitle(String _title) {this.title = title;
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    /**
-     * 
-     * @return 
-     */
+    
     @Override
-    public String getTitle() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public String getTitle() {return title;
+        
     }
 
     /**
@@ -42,7 +40,7 @@ public class ClassSongs implements ISong{
      * @param _artist 
      */
     @Override
-    public void setArtist(String _artist) {
+    public void setArtist(String _artist) {this.artist = artist;
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
@@ -51,8 +49,8 @@ public class ClassSongs implements ISong{
      * @return 
      */
     @Override
-    public String getArtist() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public String getArtist() {return artist;
+        
     }
 
     /**
@@ -60,7 +58,7 @@ public class ClassSongs implements ISong{
      * @param _album 
      */
     @Override
-    public void setAlbum(String _album) {
+    public void setAlbum(String _album) {this.album = album;
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
@@ -69,8 +67,8 @@ public class ClassSongs implements ISong{
      * @return 
      */
     @Override
-    public String getAlbum() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public String getAlbum() {return album;
+     
     }
 
     /**
@@ -78,7 +76,7 @@ public class ClassSongs implements ISong{
      * @param _duration 
      */
     @Override
-    public void setDuration(String _duration) {
+    public void setDuration(String _duration) {this.duration = duration;
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
@@ -87,8 +85,8 @@ public class ClassSongs implements ISong{
      * @return 
      */
     @Override
-    public String getDuration() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public String getDuration() {return duration;
+        
     }
 
     /**
@@ -96,7 +94,7 @@ public class ClassSongs implements ISong{
      * @param _genre 
      */
     @Override
-    public void setGenre(String _genre) {
+    public void setGenre(String _genre) {this.genre = genre;
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
@@ -105,8 +103,28 @@ public class ClassSongs implements ISong{
      * @return 
      */
     @Override
-    public String getID() {
+    public String getGenre() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+    
+    /**
+     * 
+     * @param _ID 
+     */
+    @Override
+    public void setID(String _ID) {this.ID = ID;
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+   
+    
+    /**
+     * 
+     * @return 
+     */
+    @Override
+    public String getID() {return ID;}
+
+   
+
     
 }

@@ -9,12 +9,18 @@ package Interfaces;
  * @author Ruth
  */
 public interface ICarA {
-    /**
+        /**
 	 * Metodo para obtener si la llamada esta en altavos o en modo auricular
 	 * true = esta en speaker
 	 * @return
 	 */
 	public boolean getSpeakerStatus();
+        
+        /**
+         * Metodo para obtener si la llamada esta en altavos o en modo auricular
+         * @param _SpeakerStatus 
+         */
+        public void setSpeakerStatus(boolean SpeakerStatus); 
 	
 	/**
 	 * Metodo para cambiar el estado de llamada entre speaker y auriculares

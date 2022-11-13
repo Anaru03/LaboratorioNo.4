@@ -19,7 +19,8 @@ public interface ICarB {
 	 * @return
 	 */
 	public String getLastContact();
-	
+        
+        	
 	/**
 	 * Metodo para cambiar el ultimo contacto guardado
 	 * @param LastCalledContact
@@ -33,6 +34,12 @@ public interface ICarB {
 	 * @return
 	 */
 	public String getPresentationCards();
+        
+        /**
+         * * Metodo para obtener las tarjetas de presentacion
+         * @param _presentationCards 
+         */
+        public void setPresentationCards(String presentationCards);
 	
     
 }

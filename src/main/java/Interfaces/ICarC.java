@@ -16,20 +16,28 @@ public interface ICarC {
 	 * @param actual_state estado actual de la radio que se recibe
 	 * @return El estado de la radio cambiado
 	 */
-	public boolean SwitchRadioONOFF();
+	public boolean SwitchRadioONOFF(boolean actual_state);
 	
 	/**
 	 * Obtener el estatus de la radio encendido/apagado
 	 * @return status of the radio
 	 */
 	public boolean getRadioStatus();
+        
+        /**
+         * Estatus de la radio encendido/apagado
+         * @param RadioStatus 
+         */
+        public void setRadioStatus(boolean RadioStatus);
 	
 	/**
-	 * El volumen que sube o disminuye de 1 en 1
+	 * recibe el volumen que sube o disminuye de 1 en 1
 	 * @return Obtener el valor actual del volumen
 	 */
 	public int getVolume();
 	
+       
+        
 	/**
 	 * El volumen que sube o disminuye de 1 en 1
 	 * @param Volume El volumen actual
@@ -83,7 +91,7 @@ public interface ICarC {
 	 * 1(Reproduccion de CD) 2(Reproduccion de MP3) 3 (Reproduccion de Spotify)
 	 * @return Numero que representa el tipo de reproductor
 	 */
-	public void setAudioRepType();
+	public void setAudioRepType(int audioRepType);
 	
 	/**
 	 * Metodo que se encarga de obtener una de las listas de canciones pre definidas
@@ -93,7 +101,7 @@ public interface ICarC {
 	 * @return Lista de canciones en funcion del tipo de que se solicita
 	 */
 	public ArrayList<ISong> getAListOfSongs(int TypeOfAudioReproduction);
-	
+
 	/**
 	 * Metodo que se encarga de cambiar el indice actual de la lista de reproduccion. 
 	 * Para ir a la siguiente cancion. Se obtiene el tipo de reproduccion para saber a 

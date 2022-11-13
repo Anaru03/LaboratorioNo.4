@@ -14,19 +14,40 @@ public class ClassICarB implements ICarB{
     
     private String lastContact;
     private String presentationCards;
-
+    
+    /**
+     * 
+     * @return 
+     */
     @Override
-    public String getLastContact() {
+    public String getLastContact() {return lastContact;
+        
+    }
+
+    /**
+     * 
+     * @param LastCalledContact 
+     */
+    @Override
+    public void setLastContact(String LastCalledContact) {this.lastContact = lastContact;
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
+    /**
+     * 
+     * @return 
+     */
     @Override
-    public void setLastContact(String LastCalledContact) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public String getPresentationCards() {return presentationCards;
+        
     }
 
+    /**
+     * 
+     * @param _presentationCards 
+     */
     @Override
-    public String getPresentationCards() {
+    public void setPresentationCards(String _presentationCards) {this.presentationCards = presentationCards;
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     

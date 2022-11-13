@@ -28,7 +28,11 @@ public interface ISong {
     public String getDuration();
 
     public void setGenre(String _genre);
-	
+    
+    public String getGenre();
+	  
+    public void setID(String _ID);
+    
     public String getID();
     
 }
