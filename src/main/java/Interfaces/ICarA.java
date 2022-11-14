@@ -18,14 +18,14 @@ public interface ICarA {
         
         /**
          * Metodo para obtener si la llamada esta en altavos o en modo auricular
-         * @param _SpeakerStatus 
+         * @param SpeakerStatus 
          */
         public void setSpeakerStatus(boolean SpeakerStatus); 
 	
 	/**
 	 * Metodo para cambiar el estado de llamada entre speaker y auriculares
 	 * la variable se cambia en el metodo y en el objeto
-	 * @param LastCalledContact
+	 * 
 	 */
 	public boolean ChangeSpeakerStatus();
 	

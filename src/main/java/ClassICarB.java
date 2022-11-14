@@ -8,7 +8,7 @@ import Interfaces.ICarB;
 
 /**
  *
- * @author Usuario
+ * @author Ruth Anai
  */
 public class ClassICarB implements ICarB{
     
@@ -16,8 +16,8 @@ public class ClassICarB implements ICarB{
     private String presentationCards;
     
     /**
-     * 
-     * @return 
+     * obtiene la ultima conexion
+     * @return ultima conexion
      */
     @Override
     public String getLastContact() {return lastContact;
@@ -25,8 +25,8 @@ public class ClassICarB implements ICarB{
     }
 
     /**
-     * 
-     * @param LastCalledContact 
+     * ultimo contacto
+     * @param LastCalledContact utlimo contacto
      */
     @Override
     public void setLastContact(String LastCalledContact) {this.lastContact = lastContact;
@@ -34,8 +34,8 @@ public class ClassICarB implements ICarB{
     }
 
     /**
-     * 
-     * @return 
+     * Presentacion de cards
+     * @return presentacion de cars
      */
     @Override
     public String getPresentationCards() {return presentationCards;
@@ -43,8 +43,8 @@ public class ClassICarB implements ICarB{
     }
 
     /**
-     * 
-     * @param _presentationCards 
+     * presnetacion
+     * @param _presentationCards  presnetacion
      */
     @Override
     public void setPresentationCards(String _presentationCards) {this.presentationCards = presentationCards;

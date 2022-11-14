@@ -89,7 +89,6 @@ public interface ICarC {
 	/**
 	 * Este metodo se encarga de cambiar el valor del tipo de reproduccion
 	 * 1(Reproduccion de CD) 2(Reproduccion de MP3) 3 (Reproduccion de Spotify)
-	 * @return Numero que representa el tipo de reproductor
 	 */
 	public void setAudioRepType(int audioRepType);
 	

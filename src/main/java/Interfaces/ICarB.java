@@ -37,7 +37,7 @@ public interface ICarB {
         
         /**
          * * Metodo para obtener las tarjetas de presentacion
-         * @param _presentationCards 
+         * @param presentationCards 
          */
         public void setPresentationCards(String presentationCards);
 	

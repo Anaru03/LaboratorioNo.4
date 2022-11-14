@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Usuario
+ * @author Ruth Anai
  */
 public class ClassICarC implements ICarC{
 
@@ -27,8 +27,8 @@ public class ClassICarC implements ICarC{
     private float indice = 0;
   
     /**
-     * 
-     * @return 
+     * Cambia la radio
+     * @return estado actual
      */
     @Override
     public boolean SwitchRadioONOFF(boolean actual_state) {
@@ -42,8 +42,8 @@ public class ClassICarC implements ICarC{
     }
 
     /**
-     * 
-     * @return 
+     * obtiene el estado
+     * @return estado
      */
     @Override
     public boolean getRadioStatus() {return radioStatus;
@@ -55,7 +55,7 @@ public class ClassICarC implements ICarC{
      * @param RadioStatus 
      */
     @Override
-    public void setRadioStatus(boolean RadioStatus) {this.radioStatus = radioStatus;
+    public void setRadioStatus(boolean RadioStatus) {this.radioStatus = RadioStatus;
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 

@@ -8,12 +8,14 @@ import java.util.Scanner;
 
 /**
  *
- * @author Usuario
+ * @author Ruth Anai
  */
 public class UI {
     
-    static Scanner scanner = new Scanner(System.in);
-    
+    /**
+     * Mensaje inicial
+     * @return opcion elegida
+     */
     public static int initial(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Bienvenido al radio Mercedes-Benz ");
@@ -26,5 +28,12 @@ public class UI {
         System.out.println("4. Guardar emisora");
         return scanner.nextInt();
     }
-    
+    /**
+     * Mensaje
+     * @param msg mensaje
+     */
+    public static void show(String msg){
+        System.out.println(msg);
+    }
+
 }

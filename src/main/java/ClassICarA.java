@@ -8,40 +8,70 @@ import Interfaces.ICarA;
 
 /**
  *
- * @author Usuario
+ * @author Ruth Anai
  */
 public class ClassICarA implements ICarA {
     
-    private boolean speakerStatus;
+    private boolean speakerStatus = false;
+    private double emisora = 0.5;
+    /**
+     * Regresa la emisora
+     * @return mensaje con la emisora
+     */
+    public String getEmisora() {
+        String a = String.valueOf(this.emisora);
+        return "Emisora: "+a;
+    }
+    /**
+     * aumenta la emisora
+     */
+    public void setEmisora() {
+        this.emisora = this.emisora +0.5;
+    }
+    
     
     /**
-     * 
-     * @return 
+     * Get Speker Status
+     * @return el estado de los altavoces
      */
     @Override
-    public boolean getSpeakerStatus() {return speakerStatus;
+    public boolean getSpeakerStatus() {
+        return speakerStatus;
+    }
+    
+    /**
+     * Cambia el estado de los altavocis
+     * @param _SpeakerStatus estado 
+     */
+    @Override
+    public void setSpeakerStatus(boolean _SpeakerStatus) {this.speakerStatus = _SpeakerStatus;
         
     }
     
-    /**
-     * 
-     * @param _SpeakerStatus 
-     */
-    @Override
-    public void setSpeakerStatus(boolean _SpeakerStatus) {this.speakerStatus = speakerStatus;
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
 
     /**
-     * 
-     * @return 
+     * Cambia el  estado de los altavoces
+     * @return true
      */
     @Override
     public boolean ChangeSpeakerStatus() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        if(this.speakerStatus){
+          this.speakerStatus = false; 
+        }
+        else{
+            this.speakerStatus = true;
+        }
+        return true;
     }
-
+    /**
+     * Agrega un nuevo viaje
+     * @param tripday dia
+     * @param tripHour_ hora
+     * @param tripPlace lugar
+     * @param tripLength largo
+     * @param tripObjective objetuvi
+     * @return viaje
+     */
     @Override
     public String TripPlanification(String tripday, String tripHour_, String tripPlace, String tripLength, String tripObjective) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
